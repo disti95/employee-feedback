@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    font-family: "Segoe WP","Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+#head_container {
+	position: relative;
+	height: 20%;
+	width: 100%;
+}
+
+#logo {
+	position: relative;
+    height: 65%;
+	margin-left: 20%;
+	z-index: 1;
+}
+
+#header {
+	position:relative;
+	height: 35%;
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+
+#rating_container {
+        position: fixed;
+	height: 50%;
+	width: 100%;
+	margin-top: 3%;
+	text-align: center;
+}
+
+#rating_from {
+	text-align: center;
+}
+
+#footer {
+	height: 8%;
+	width: 100%;
+        bottom: 0;
+        padding: 0;
+        position: absolute;
+}
+
+svg {
+    max-width: 100%;
+    max-height: 100%;
+    fill: rgba(0, 0, 0, 0.06);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feedback__form {
+    padding: 10px 0;
+}
+.feedback__submit {
+
+    background: linear-gradient(150deg, #0076b8, #004c76);
+    padding: 10px 40px;
+    border: 0;
+    color: #fff;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px grey;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.feedback__submit:hover {
+    background: linear-gradient(150deg, blue, darkblue);
+}
+
+.rating {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating input:checked ~ label svg {
+    fill: gold;
+}
+
+.rating input + label:hover svg, .rating input + label:hover ~ label svg {
+    fill: gold;
+}
+
+.rating label {
+    position: relative;
+    width: 2em;
+    height: 2em;
+}
